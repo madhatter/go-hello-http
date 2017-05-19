@@ -20,10 +20,12 @@ func main() {
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
+// Hello greets the world
 func Hello(w http.ResponseWriter, req *http.Request) {
 	fmt.Fprintln(w, "Hello world!")
 }
 
+// Foo is greeting only himself
 func Foo(w http.ResponseWriter, req *http.Request) {
 	fmt.Fprintln(w, "Hello fooo!")
 }
